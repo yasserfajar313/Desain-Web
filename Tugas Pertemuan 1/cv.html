@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV – Biodata Pribadi</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #121a2b;
+      --ink: #e9eefc;
+      --muted: #9fb0d0;
+      --accent: #6aa6ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #0b1220 0%, #0e1527 100%);
+    }
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,.4);
+    }
+    header {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 20px;
+      padding: 28px;
+      align-items: center;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 2px solid rgba(255,255,255,.15);
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+    header p.role {
+      margin: 0;
+      color: var(--muted);
+    }
+    .chip {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(106,166,255,.15);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      border: 1px solid rgba(106,166,255,.3);
+      margin-bottom: 8px;
+    }
+
+    .section { padding: 0 28px 28px; }
+    .section h2 {
+      font-size: 18px;
+      margin: 24px 0 12px;
+      color: var(--accent);
+    }
+
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    @media (max-width: 720px) {
+      header { grid-template-columns: 1fr; text-align: center; }
+      header img { margin: 0 auto; }
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    th { width: 35%; color: var(--muted); font-weight: 600; }
+
+    ul { margin: 6px 0 0 18px; padding: 0; }
+    li { margin: 6px 0; }
+
+    .contact a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(255,255,255,.25);
+    }
+    .contact a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    footer {
+      padding: 20px 28px 28px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <img src="WhatsApp Image 2025-09-02 at 21.16.51_7d706d95.jpg" alt="Foto Profil" />
+        <div>
+          <span class="chip">CURRICULUM VITAE</span>
+          <h1>Yasser Fajar Purwawiwaha</h1>
+          <p class="role">Mahasiswa | Web Enthusiast</p>
+          <p class="contact">
+            📧 <a href="mailto:yass23066ti@student.nurulfikri.ac.id">yass23066ti@student.nurulfikri.ac.id</a> · 📱 <a href="tel:+6281213464151">+62 812-1346-4151</a> · 📍 Jakarta, Indonesia
+          </p>
+        </div>
+      </header>
+
+      <div class="section">
+        <h2>BIODATA LENGKAP</h2>
+        <table>
+          <tbody>
+            <tr><th>Nama Lengkap</th><td>Yasser Fajar Purwawiwaha</td></tr>
+            <tr><th>Nama Panggilan</th><td>Yasser</td></tr>
+            <tr><th>Tempat, Tanggal Lahir</th><td>Bogor, 03 Januari 2003</td></tr>
+            <tr><th>Alamat</th><td>Bogor</td></tr>
+            <tr><th>Jenis Kelamin</th><td>Laki-Laki</td></tr>
+            <tr><th>Agama</th><td>Islam</td></tr>
+            <tr><th>Kewarganegaraan</th><td>Indonesia</td></tr>
+            <tr><th>Status</th><td>Mahasiswa</td></tr>
+            <tr><th>Email</th><td>yass23066ti@student.nurulfikri.ac.id</td></tr>
+            <tr><th>Telepon</th><td>+62 812-1346-4151</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section grid">
+        <div>
+          <h2>DESKRIPSI SINGKAT</h2>
+          <p>Satu titik dua koma, kurang titik — eror semua.</p>
+        </div>
+        <div>
+          <h2>KEMAMPUAN</h2>
+          <ul>
+            <li>HTML, CSS, JavaScript (dasar)</li>
+            <li>Git & GitHub</li>
+            <li>Komunikasi & Kerja Tim</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section grid">
+        <div>
+          <h2>PENDIDIKAN</h2>
+          <ul>
+            <li><strong>STT Terpadu Nurul Fikri</strong> — Teknik Informatika (2023 – Sekarang)</li>
+          </ul>
+        </div>
+        <div>
+          <h2>ORGANISASI / PENGALAMAN</h2>
+          <ul>
+            <li><strong>OPPM</strong> — Mighty of Coordinator (2021 – 2022)</li>
+            <li><strong>Proyek</strong> — Membuat website SafeAlert</li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          Welcome to the Faculty of Engineering — Per Teknologian nos universum regimus. We program, we develop, we are on systems information. Make dreams come true with action. Logic is our weapon and business is our battlefield, from algorithms to the end.
+        </p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
