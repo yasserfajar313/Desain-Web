@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jadwal Kuliah - Yasser Fajar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      margin: 30px auto;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    th, td {
+      border: 2px solid #333;
+      padding: 10px;
+    }
+    th {
+      background-color: #444;
+      color: #fff;
+      font-weight: bold;
+    }
+    tfoot td {
+      background-color: #222;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      padding: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* Hari */
+    .senin { background-color: #f2ffe6; }
+    .selasa { background-color: #e6f7ff; }
+    .rabu { background-color: #fff0e6; }
+    .kamis { background-color: #f9e6ff; }
+
+    /* Dosen */
+    .anwar { background-color: #d6f5d6; }
+    .hendri { background-color: #d6eaff; }
+    .henry { background-color: #fff6cc; }
+    .sirojul { background-color: #f0e6ff; }
+    .umam { background-color: #ffe6cc; }
+    .mahfudz { background-color: #ffd6e7; }
+
+    /* Ruangan */
+    .ruang-teori { background-color: #e6ffe6; }
+    .ruang-i { background-color: #e6f0ff; }
+    .ruang-kosong { background-color: #f2f2f2; }
+
+    /* Hover effect */
+    tr:hover td {
+      background-color: #ddd !important;
+      transition: background-color 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Jadwal Kuliah</h2>
+
+  <table>
+    <tr>
+      <th>HARI</th>
+      <th>JAM</th>
+      <th>MATA KULIAH</th>
+      <th>DOSEN</th>
+      <th>RUANG</th>
+    </tr>
+
+    <!-- Senin -->
+    <tr>
+      <td rowspan="2" class="senin">SENIN</td>
+      <td>08.00 - 10.00</td>
+      <td>Kajian Islam</td>
+      <td class="anwar">Ust. Anwar Nashidin, Lc.</td>
+      <td class="ruang-teori">Ruang Teori</td>
+    </tr>
+    <tr>
+      <td>10.00 - 12.00</td>
+      <td>Aplikasi Perkantoran</td>
+      <td class="hendri">Drs. MGS Hendri, M.M</td>
+      <td rowspan="5" class="ruang-i">Ruang I</td>
+    </tr>
+
+    <!-- Selasa -->
+    <tr>
+      <td rowspan="2" class="selasa">SELASA</td>
+      <td>08.00 - 10.00</td>
+      <td>Linux Fundamental</td>
+      <td class="henry">Henry Saptono, S.Si, M.Kom</td>
+    </tr>
+    <tr>
+      <td>10.00 - 12.00</td>
+      <td>Html, Css & Javascript</td>
+      <td rowspan="3" class="sirojul">Sirojul Munir, S.Si, M.Kom</td>
+    </tr>
+
+    <!-- Rabu -->
+    <tr>
+      <td rowspan="2" class="rabu">RABU</td>
+      <td>08.00 - 10.00</td>
+      <td>Basis Data</td>
+    </tr>
+    <tr>
+      <td>10.00 - 12.00</td>
+      <td>Algoritma dan Pemograman</td>
+    </tr>
+
+    <!-- Kamis -->
+    <tr>
+      <td rowspan="2" class="kamis">KAMIS</td>
+      <td>08.00 - 10.00</td>
+      <td>Kewirausahaan & Pengembangan Diri</td>
+      <td class="umam">Khoirul Umam, S.Pd</td>
+      <td rowspan="2" class="ruang-teori">Ruang Teori</td>
+    </tr>
+    <tr>
+      <td>10.00 - 12.00</td>
+      <td>Bahasa Inggris</td>
+      <td class="mahfudz">Drs. Mahfudz</td>
+    </tr>
+
+    <tfoot>
+      <tr>
+        <td colspan="5">JADWAL DAPAT BERUBAH SEWAKTU-WAKTU</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
